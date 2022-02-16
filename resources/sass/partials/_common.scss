@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.active {
+    color: $brand-color;
+    border-bottom: 5px solid $brand-color;
+}

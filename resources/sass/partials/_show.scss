@@ -1,0 +1,153 @@
+main {
+
+    .comic_description {
+         background-color: white;
+
+        .bg_brand {
+            background-color: $brand-color;
+            height: 40px;
+
+            .img_show {
+                position: absolute;
+                left: 314px;
+                top: 228px;
+            }
+        }
+
+        .container_dimension {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: auto;
+            position: relative;
+
+            .comic_card_show {
+
+                .container_comic_description {
+                    display: flex;
+                    align-items: center;
+
+                    .left_description {
+
+                        h2, p {
+                            color:black;
+                        }
+
+                        h2 {
+                            margin-top:40px;
+                            margin-bottom: 15px;
+                        }
+
+                        .price {
+                            margin: 15px 0;
+                            padding: 10px;
+                            color: white;
+                            border: 1px solid $bg_green;
+                            background-color: $bg_green;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .desc {
+                            color: black;
+                            font-size: 12px;
+                            line-height: 20px;
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    .img_description {
+
+                        span {
+                            display: flex;
+                            justify-content: flex-end;
+                            font-size: 8px;
+                            font-weight: 700;
+                            padding-bottom: 3px;
+                            text-transform: uppercase;
+                        }
+
+                        .adv_img {
+                            height: 144px;
+                            width: 144px;
+                            margin-left: 51px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .artists {
+        background-color:$bg_gray;
+        padding-top:20px;
+        padding-bottom:80px;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        border-top:1px solid lightgray;
+        border-bottom:1px solid lightgray;
+
+        .talent {
+            width: 40%;
+
+            h3 {
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            .border_tp {
+                padding: 10px 0;
+                font-size: 11px;
+                display: flex;
+                justify-content: space-between;
+                border-top:1px solid lightgray;
+                border-bottom:1px solid lightgray;
+            }
+        }
+
+        .specs {
+            width: 40%;
+            margin-left: 10%;
+
+            h3 {
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            .border_tp {
+                padding: 10px 0;
+                font-size: 11px;
+                display: flex;
+                justify-content: space-between;
+                border-top:1px solid lightgray;
+                border-bottom:1px solid lightgray;
+            }
+        }
+    }
+
+    .digital_shop {
+        background-color:$bg_gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .side_border {
+            padding: 20px;
+            color: gray;
+            border-left:1px solid lightgray;
+            border-right:1px solid lightgray;
+
+            .shop_img {
+                height: 20px;
+                display: flex;
+                color: gray;
+            }
+        }
+
+        .cta-icons {
+            color: black;
+        }
+    }
+}

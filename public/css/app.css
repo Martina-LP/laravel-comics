@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.active {
+  color: #0282F9;
+  border-bottom: 5px solid #0282F9;
+}
+
+header .top_header {
+  background-color: #0282F9;
+  color: white;
+}
+
+header .top_header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .top_header a {
+  padding: 8px 16px;
+  font-size: 8px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .top_header a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header .header_menu {
+  background-color: white;
+}
+
+header .header_menu nav {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+header .header_menu nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header .header_menu nav .logo {
+  width: 50px;
+  height: auto;
+}
+
+header .header_menu nav .list_menu a {
+  padding: 32px 0;
+  margin: 0 16px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+header .header_menu nav .list_menu a:hover {
+  border-bottom: 5px solid #0282F9;
+}
+
+header .header_menu nav input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #0282F9;
+}
+
+.jumbotron-comics {
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+main {
+  background-color: #1C1C1C;
+}
+
+main .current {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+main .current p {
+  position: absolute;
+  width: 14%;
+  left: 88px;
+  padding: 10px;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #0282F9;
+  background-color: #0282F9;
+}
+
+main .button {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+main .button button {
+  background-color: #0282F9;
+  padding: 12px 62px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+main .comics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .comics .comic_cards {
+  width: calc(16.6666666667% - 16px);
+  margin: 8px;
+  color: white;
+}
+
+main .comics .comic_cards .img_index {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+main .comics .comic_cards a {
+  font-size: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+footer .top_footer {
+  background-color: #0282F9;
+  padding: 40px;
+  color: white;
+}
+
+footer .top_footer img {
+  height: 26px;
+  margin-right: 10px;
+}
+
+footer .top_footer .top_footer_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .middle_footer {
+  background-image: url("../img/footer-bg.jpg");
+  display: flex;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+footer .middle_footer .menu_col {
+  display: flex;
+  margin-top: 20px;
+  line-height: 18px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+footer .middle_footer .menu_col h5 {
+  text-transform: uppercase;
+}
+
+footer .middle_footer .menu_col ul {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+footer .middle_footer .menu_col ul li {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.34);
+  letter-spacing: 1px;
+}
+
+footer .middle_footer p {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.34);
+  letter-spacing: 1px;
+}
+
+footer .middle_footer p a {
+  color: #0282F9;
+  text-decoration: none;
+}
+
+footer .middle_footer .big_logo {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+}
+
+footer .bottom_footer {
+  background-color: #303030;
+}
+
+footer .bottom_footer .bt_display {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_left {
+  padding: 20px 0;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_left button {
+  background-color: #303030;
+  padding: 8px 8px;
+  font-size: 10px;
+  color: white;
+  border: 1px solid #0282F9;
+  text-transform: uppercase;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_right {
+  padding: 25px 0;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_right .social {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_right .social ul {
+  display: flex;
+  list-style-type: none;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_right .social ul li {
+  padding: 0 5px;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_right .social h4 {
+  padding: 5px;
+  font-size: 10px;
+  color: #0282F9;
+  text-transform: uppercase;
+}
+
+footer .bottom_footer .bt_display .footer_bottom_right .social i {
+  background-color: gray;
+  padding: 3px;
+  color: #303030;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+main .comic_description {
+  background-color: white;
+}
+
+main .comic_description .bg_brand {
+  background-color: #0282F9;
+  height: 40px;
+}
+
+main .comic_description .bg_brand .img_show {
+  position: absolute;
+  left: 314px;
+  top: 228px;
+}
+
+main .comic_description .container_dimension {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .comic_description .container_dimension .comic_card_show .container_comic_description {
+  display: flex;
+  align-items: center;
+}
+
+main .comic_description .container_dimension .comic_card_show .container_comic_description .left_description h2,
+main .comic_description .container_dimension .comic_card_show .container_comic_description .left_description p {
+  color: black;
+}
+
+main .comic_description .container_dimension .comic_card_show .container_comic_description .left_description h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+main .comic_description .container_dimension .comic_card_show .container_comic_description .left_description .price {
+  background-color: #55BA59;
+  margin: 15px 0;
+  padding: 10px;
+  color: white;
+  border: 1px solid #55BA59;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .comic_description .container_dimension .comic_card_show .container_comic_description .left_description .desc {
+  margin-bottom: 40px;
+  line-height: 20px;
+  font-size: 12px;
+  color: black;
+}
+
+main .comic_description .container_dimension .comic_card_show .container_comic_description .img_description span {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 3px;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main .comic_description .container_dimension .comic_card_show .container_comic_description .img_description .adv_img {
+  height: 144px;
+  width: 144px;
+  margin-left: 51px;
+}
+
+main .artists {
+  background-color: #F6F6F6;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+main .artists .talent {
+  width: 40%;
+}
+
+main .artists .talent h3 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+main .artists .talent .border_tp {
+  padding: 10px 0;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+main .artists .specs {
+  width: 40%;
+  margin-left: 10%;
+}
+
+main .artists .specs h3 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+main .artists .specs .border_tp {
+  padding: 10px 0;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+main .digital_shop {
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .digital_shop .side_border {
+  padding: 20px;
+  color: gray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+main .digital_shop .side_border .shop_img {
+  height: 20px;
+  display: flex;
+  color: gray;
+}
+
+main .digital_shop .cta-icons {
+  color: black;
+}
